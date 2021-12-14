@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+public class latihan_java {
+	public static void main(String[] args){
+		//Membuat Instance/Objek dari LinkedList
+		LinkedList<String> buah = new LinkedList<>();
+	
+		//Menambahkan Data pada Objek buah
+		buah.add("Jeruk");
+		buah.add("Jambu");
+		buah.add("Apel");	
+	
+		//Mencetak/Menampilan Data
+		System.out.println("Nama Buah DIAWAL---: "+buah);
+		
+		//Menghitung Jumlah/Ukuran pada Objek LinkedList
+		System.out.println("Jumlah Buah: "+buah.size());
+		
+		//tambah
+		buah.addFirst( e: "Paling Atas");//Menambahkan Data pada Index Teratas
+		buah.addLast( e: "Paling Bawah");//Menambahkan Data pada Index Terbawah
+		System.out.println("Nama Buah setelah DITAMBAH---: "+buah);
+		
+		//edit
+		buah.set(1, "AWAL");// Mengubah Data pada No Index 2
+		buah.set(8, "AKHIR");// Mengubah Data pada No Index 5
+		System.out.println("Nama Buah Setelah DIEDIT---: "+buah);
+	}
+}
